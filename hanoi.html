@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Torres de Hanoi (Prolog + Web)</title>
+        <link rel="stylesheet" href="hanoi_style" />
+    </head>
+    <body>
+        <h1 class="h1Title">Torres de Hanoi</h1>
+
+        <div class="controls">
+            <label for="num-disks" style="font-weight: bold; margin-right: 10px">Discos:</label>
+            <input class="diskInput" type="number" id="num-disks" value="3" min="1" max="10" />
+            <button id="reset-button">Reiniciar</button>
+        </div>
+
+        <div id="game-board">
+            <div class="peg-container">
+                <div class="peg" id="peg-a" data-pegname="a"></div>
+                <div class="peg-label">A</div>
+            </div>
+            <div class="peg-container">
+                <div class="peg" id="peg-b" data-pegname="b"></div>
+                <div class="peg-label">B</div>
+            </div>
+            <div class="peg-container">
+                <div class="peg" id="peg-c" data-pegname="c"></div>
+                <div class="peg-label">C</div>
+            </div>
+        </div>
+
+        <div id="message-area">
+            <div style="font-weight: bold; font-size: 1.1em">
+                Movimientos:
+                <span id="move-count" style="color: #007bff">0</span> (Mínimo:
+                <span id="min-moves" style="color: #28a745">?</span>)
+            </div>
+            <p id="status-message"></p>
+        </div>
+
+        <script src="hanoi_script"></script>
+    </body>
+</html>
