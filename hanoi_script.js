@@ -61,7 +61,7 @@ async function sendMove(fromPegName, toPegName) {
 
 async function resetGame() {
     const numDisks = parseInt(numDisksInput.value, 10);
-    if (isNaN(numDisks) || numDisks < 1) {
+    if (isNaN(numDisks) || numDisks < 3 || numDisks > 5) {
         updateMessages("Número de discos inválido", "error");
         return;
     }
