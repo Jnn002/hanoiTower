@@ -41,3 +41,5 @@ To change the default port, edit the `default_port(8000)` line in `hanoi_server.
 -   `hanoi_script.js` - JavaScript logic for user interaction.
 -   `hanoi_server.pl` - Prolog server that handles the web API and game logic.
 -   `hanoi.pl` - Base implementation of the Towers of Hanoi for console use.
+
+![Towers of Hanoi Game Interface](screenshot.png)
